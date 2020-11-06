@@ -1,0 +1,9 @@
+<div class="video_container">
+
+  <div plyr style="width: 640px;" plyrTitle="Video 1" [plyrPlaysInline]="true" [plyrSources]="videoSources" (plyrLoadedData)="toTC()" (plyrInit)="player = $event" (plyrPlay)="played($event)"></div>
+
+  <span class="tc" [textContent]="'TC: ' + tc"></span>
+  <img class="theme_img" [src]="theme_img" alt="" />
+  <div class="theme_text">{{theme_text}}</div>
+
+</div>
